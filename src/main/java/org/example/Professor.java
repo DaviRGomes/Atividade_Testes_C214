@@ -1,10 +1,8 @@
 package org.example;
 
-import lombok.Getter;
 
 import java.util.List;
 
-@Getter
 public class Professor {
     private String id;
     private String nome;
@@ -27,11 +25,35 @@ public class Professor {
         return List.of(Integer.valueOf(numeroPredio));
     }
 
-    public void setHorarioAtendimento(String horarioAtendimento) {
-        this.horarioAtendimento = horarioAtendimento;
+    public String getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getHorarioAtendimento() {
+        return horarioAtendimento;
+    }
+
+    public String getPeriodo() {
+        return periodo;
+    }
+
+    public int getSala() {
+        return sala;
+    }
+
+    public List<Integer> getPredios() {
+        return predios;
     }
 
     public void setSala(int sala) {
         this.sala = sala;
+    }
+
+    public void setHorarioAtendimento(String horarioAtendimento) {
+        this.horarioAtendimento = horarioAtendimento;
     }
 }
